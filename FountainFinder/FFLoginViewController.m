@@ -8,6 +8,7 @@
 
 #import "FFLoginViewController.h"
 
+#import <SVProgressHUD.h>
 #import "FFFountainViewController.h"
 #import "FFLoginView.h"
 #import "FFFirebase.h"
@@ -38,18 +39,24 @@
 
 - (void) viewDidLoad {
     [[[self loginView] loginButton] addTarget:self action:@selector(loginPressed:) forControlEvents:UIControlEventTouchUpInside];
+#ifdef DEBUG
+    [[[self loginView] username] setText:@"test@example.com"];
+    [[[self loginView] password] setText:@"test"];
+#endif
 }
 
 - (void) loginPressed:(UIButton*)button {
     NSString* username = [[[self loginView] username] text];
     NSString* password = [[[self loginView] password] text];
 
+    [SVProgressHUD showWithStatus:@"Logging in..."];
     [[FFFirebase f] authUser:username password:password withCompletionBlock:^(NSError *error, FAuthData *authData) {
         if (error) {
-            NSLog(@"auth error: %@", error);
+            [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"auth error: %@", error]];
             return;
         }
 
+        [SVProgressHUD showSuccessWithStatus:@"Logged in!"];
         FFFountainViewController* vc = [FFFountainViewController new];
         [[self navigationController] pushViewController:vc animated:FALSE];
     }];
