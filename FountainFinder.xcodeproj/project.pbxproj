@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		288BE6541BBE13FA00ABABDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 288BE6531BBE13FA00ABABDB /* main.m */; };
+		288BE65F1BBE13FA00ABABDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 288BE65E1BBE13FA00ABABDB /* Assets.xcassets */; };
+		288BE6621BBE13FA00ABABDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288BE6601BBE13FA00ABABDB /* LaunchScreen.storyboard */; };
+		288BE6711BBE142D00ABABDB /* FFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 288BE66A1BBE142D00ABABDB /* FFAppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		288BE6721BBE142D00ABABDB /* FFFirebase.m in Sources */ = {isa = PBXBuildFile; fileRef = 288BE66C1BBE142D00ABABDB /* FFFirebase.m */; settings = {ASSET_TAGS = (); }; };
+		288BE6731BBE142D00ABABDB /* FFLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 288BE66E1BBE142D00ABABDB /* FFLoginView.m */; settings = {ASSET_TAGS = (); }; };
+		288BE6741BBE142D00ABABDB /* FFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 288BE6701BBE142D00ABABDB /* FFLoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		288BE6761BBE143100ABABDB /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288BE6751BBE143100ABABDB /* Firebase.framework */; settings = {ASSET_TAGS = (); }; };
+		288BE6781BBE143D00ABABDB /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 288BE6771BBE143D00ABABDB /* libc++.tbd */; };
+		288BE67A1BBE145200ABABDB /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 288BE6791BBE145200ABABDB /* libicucore.tbd */; };
+		288BE67C1BBE146E00ABABDB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288BE67B1BBE146E00ABABDB /* SystemConfiguration.framework */; };
+		288BE67E1BBE147500ABABDB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288BE67D1BBE147500ABABDB /* CFNetwork.framework */; };
+		288BE6801BBE148000ABABDB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288BE67F1BBE148000ABABDB /* Security.framework */; };
+		288BE6841BBE193D00ABABDB /* FFFountainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 288BE6831BBE193D00ABABDB /* FFFountainViewController.m */; settings = {ASSET_TAGS = (); }; };
+		288BE6871BBE196600ABABDB /* FFFountainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 288BE6861BBE196600ABABDB /* FFFountainView.m */; settings = {ASSET_TAGS = (); }; };
+		288BE68A1BBE2A4800ABABDB /* FFFountain.m in Sources */ = {isa = PBXBuildFile; fileRef = 288BE6891BBE2A4800ABABDB /* FFFountain.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		288BE64F1BBE13FA00ABABDB /* FountainFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FountainFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		288BE6531BBE13FA00ABABDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		288BE65E1BBE13FA00ABABDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		288BE6611BBE13FA00ABABDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		288BE6631BBE13FA00ABABDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		288BE6691BBE142D00ABABDB /* FFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFAppDelegate.h; sourceTree = "<group>"; };
+		288BE66A1BBE142D00ABABDB /* FFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFAppDelegate.m; sourceTree = "<group>"; };
+		288BE66B1BBE142D00ABABDB /* FFFirebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFirebase.h; sourceTree = "<group>"; };
+		288BE66C1BBE142D00ABABDB /* FFFirebase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFirebase.m; sourceTree = "<group>"; };
+		288BE66D1BBE142D00ABABDB /* FFLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFLoginView.h; sourceTree = "<group>"; };
+		288BE66E1BBE142D00ABABDB /* FFLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFLoginView.m; sourceTree = "<group>"; };
+		288BE66F1BBE142D00ABABDB /* FFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFLoginViewController.h; sourceTree = "<group>"; };
+		288BE6701BBE142D00ABABDB /* FFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFLoginViewController.m; sourceTree = "<group>"; };
+		288BE6751BBE143100ABABDB /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = FountainFinder/Firebase.framework; sourceTree = "<group>"; };
+		288BE6771BBE143D00ABABDB /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		288BE6791BBE145200ABABDB /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		288BE67B1BBE146E00ABABDB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		288BE67D1BBE147500ABABDB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		288BE67F1BBE148000ABABDB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		288BE6821BBE193D00ABABDB /* FFFountainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFountainViewController.h; sourceTree = "<group>"; };
+		288BE6831BBE193D00ABABDB /* FFFountainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFountainViewController.m; sourceTree = "<group>"; };
+		288BE6851BBE196600ABABDB /* FFFountainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFountainView.h; sourceTree = "<group>"; };
+		288BE6861BBE196600ABABDB /* FFFountainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFountainView.m; sourceTree = "<group>"; };
+		288BE6881BBE2A4800ABABDB /* FFFountain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFountain.h; sourceTree = "<group>"; };
+		288BE6891BBE2A4800ABABDB /* FFFountain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFountain.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		288BE64C1BBE13FA00ABABDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288BE6801BBE148000ABABDB /* Security.framework in Frameworks */,
+				288BE67E1BBE147500ABABDB /* CFNetwork.framework in Frameworks */,
+				288BE67C1BBE146E00ABABDB /* SystemConfiguration.framework in Frameworks */,
+				288BE67A1BBE145200ABABDB /* libicucore.tbd in Frameworks */,
+				288BE6781BBE143D00ABABDB /* libc++.tbd in Frameworks */,
+				288BE6761BBE143100ABABDB /* Firebase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		288BE6461BBE13FA00ABABDB = {
+			isa = PBXGroup;
+			children = (
+				288BE6511BBE13FA00ABABDB /* FountainFinder */,
+				288BE6501BBE13FA00ABABDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		288BE6501BBE13FA00ABABDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				288BE64F1BBE13FA00ABABDB /* FountainFinder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		288BE6511BBE13FA00ABABDB /* FountainFinder */ = {
+			isa = PBXGroup;
+			children = (
+				288BE6691BBE142D00ABABDB /* FFAppDelegate.h */,
+				288BE66A1BBE142D00ABABDB /* FFAppDelegate.m */,
+				288BE66B1BBE142D00ABABDB /* FFFirebase.h */,
+				288BE66C1BBE142D00ABABDB /* FFFirebase.m */,
+				288BE66D1BBE142D00ABABDB /* FFLoginView.h */,
+				288BE66E1BBE142D00ABABDB /* FFLoginView.m */,
+				288BE66F1BBE142D00ABABDB /* FFLoginViewController.h */,
+				288BE6701BBE142D00ABABDB /* FFLoginViewController.m */,
+				288BE6821BBE193D00ABABDB /* FFFountainViewController.h */,
+				288BE6831BBE193D00ABABDB /* FFFountainViewController.m */,
+				288BE6851BBE196600ABABDB /* FFFountainView.h */,
+				288BE6861BBE196600ABABDB /* FFFountainView.m */,
+				288BE6881BBE2A4800ABABDB /* FFFountain.h */,
+				288BE6891BBE2A4800ABABDB /* FFFountain.m */,
+				288BE65E1BBE13FA00ABABDB /* Assets.xcassets */,
+				288BE6601BBE13FA00ABABDB /* LaunchScreen.storyboard */,
+				288BE6631BBE13FA00ABABDB /* Info.plist */,
+				288BE6521BBE13FA00ABABDB /* Supporting Files */,
+				288BE6811BBE149900ABABDB /* Frameworks */,
+			);
+			path = FountainFinder;
+			sourceTree = "<group>";
+		};
+		288BE6521BBE13FA00ABABDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				288BE6531BBE13FA00ABABDB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		288BE6811BBE149900ABABDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				288BE6791BBE145200ABABDB /* libicucore.tbd */,
+				288BE6771BBE143D00ABABDB /* libc++.tbd */,
+				288BE67F1BBE148000ABABDB /* Security.framework */,
+				288BE67D1BBE147500ABABDB /* CFNetwork.framework */,
+				288BE67B1BBE146E00ABABDB /* SystemConfiguration.framework */,
+				288BE6751BBE143100ABABDB /* Firebase.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		288BE64E1BBE13FA00ABABDB /* FountainFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 288BE6661BBE13FA00ABABDB /* Build configuration list for PBXNativeTarget "FountainFinder" */;
+			buildPhases = (
+				288BE64B1BBE13FA00ABABDB /* Sources */,
+				288BE64C1BBE13FA00ABABDB /* Frameworks */,
+				288BE64D1BBE13FA00ABABDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FountainFinder;
+			productName = FountainFinder;
+			productReference = 288BE64F1BBE13FA00ABABDB /* FountainFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		288BE6471BBE13FA00ABABDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = sphippen;
+				TargetAttributes = {
+					288BE64E1BBE13FA00ABABDB = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 288BE64A1BBE13FA00ABABDB /* Build configuration list for PBXProject "FountainFinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 288BE6461BBE13FA00ABABDB;
+			productRefGroup = 288BE6501BBE13FA00ABABDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				288BE64E1BBE13FA00ABABDB /* FountainFinder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		288BE64D1BBE13FA00ABABDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288BE6621BBE13FA00ABABDB /* LaunchScreen.storyboard in Resources */,
+				288BE65F1BBE13FA00ABABDB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		288BE64B1BBE13FA00ABABDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288BE6841BBE193D00ABABDB /* FFFountainViewController.m in Sources */,
+				288BE6731BBE142D00ABABDB /* FFLoginView.m in Sources */,
+				288BE6711BBE142D00ABABDB /* FFAppDelegate.m in Sources */,
+				288BE6741BBE142D00ABABDB /* FFLoginViewController.m in Sources */,
+				288BE6871BBE196600ABABDB /* FFFountainView.m in Sources */,
+				288BE6541BBE13FA00ABABDB /* main.m in Sources */,
+				288BE6721BBE142D00ABABDB /* FFFirebase.m in Sources */,
+				288BE68A1BBE2A4800ABABDB /* FFFountain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		288BE6601BBE13FA00ABABDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				288BE6611BBE13FA00ABABDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		288BE6641BBE13FA00ABABDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		288BE6651BBE13FA00ABABDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		288BE6671BBE13FA00ABABDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FountainFinder",
+				);
+				INFOPLIST_FILE = FountainFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sphippen.FountainFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		288BE6681BBE13FA00ABABDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FountainFinder",
+				);
+				INFOPLIST_FILE = FountainFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sphippen.FountainFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		288BE64A1BBE13FA00ABABDB /* Build configuration list for PBXProject "FountainFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				288BE6641BBE13FA00ABABDB /* Debug */,
+				288BE6651BBE13FA00ABABDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		288BE6661BBE13FA00ABABDB /* Build configuration list for PBXNativeTarget "FountainFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				288BE6671BBE13FA00ABABDB /* Debug */,
+				288BE6681BBE13FA00ABABDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 288BE6471BBE13FA00ABABDB /* Project object */;
+}
