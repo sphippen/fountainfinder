@@ -50,6 +50,14 @@
             return;
         }
 
+        FFFountain* fount = [FFFountain new];
+        [fount setTitle:@"Fun Fountain"];
+        [fount setTemperature:4];
+        [fount setPressure:3];
+        [fount setCleanliness:5];
+        [fount setCoordinate:CLLocationCoordinate2DMake(40.77, -111.90)];
+        //[FFFirebase addFountain:fount];
+
         FFFountainViewController* vc = [FFFountainViewController new];
         [[self navigationController] pushViewController:vc animated:FALSE];
     }];

@@ -26,14 +26,19 @@ static NSArray* sFountains = nil;
 }
 
 + (void) listenForFountains {
-    [[self fountainsPath] observeEventType:(FEventTypeChildAdded | FEventTypeChildRemoved) withBlock:^(FDataSnapshot *snapshot) {
-        NSMutableArray* fountains = [NSMutableArray new];
-        for (NSDictionary* dict in [snapshot value])
-            [fountains addObject:[[FFFountain alloc] initWithDictionary:dict]];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [[self fountainsPath] observeEventType:(FEventTypeValue) withBlock:^(FDataSnapshot *snapshot) {
+            NSMutableArray* fountains = [NSMutableArray new];
+            NSDictionary* fountsMap = [snapshot value];
+            for (NSString* dictKey in fountsMap)
+                [fountains addObject:[[FFFountain alloc] initWithDictionary:[fountsMap objectForKey:dictKey]]];
 
-        sFountains = fountains;
-        [[NSNotificationCenter defaultCenter] postNotificationName:FFFirebaseFountainsChanged object:nil];
-    }];
+            sFountains = fountains;
+            [[NSNotificationCenter defaultCenter] postNotificationName:FFFirebaseFountainsChanged object:nil];
+            NSLog(@"Fountains updated: %ld fountains", (long)[sFountains count]);
+        }];
+    });
 }
 
 + (NSArray*) fountains {
@@ -42,7 +47,12 @@ static NSArray* sFountains = nil;
 
 + (void) addFountain:(FFFountain*)fountain {
     Firebase* newFountain = [[self fountainsPath] childByAutoId];
-    [newFountain setValue:[fountain dictionaryVersion]];
+    [newFountain setValue:[fountain dictionaryVersion] withCompletionBlock:^(NSError *error, Firebase *ref) {
+        if (error)
+            NSLog(@"Error creating fountain: %@", error);
+        else
+            NSLog(@"Created fountain!");
+    }];
 }
 
 @end

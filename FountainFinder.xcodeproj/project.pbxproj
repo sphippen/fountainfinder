@@ -23,6 +23,8 @@
 		288BE6841BBE193D00ABABDB /* FFFountainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 288BE6831BBE193D00ABABDB /* FFFountainViewController.m */; settings = {ASSET_TAGS = (); }; };
 		288BE6871BBE196600ABABDB /* FFFountainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 288BE6861BBE196600ABABDB /* FFFountainView.m */; settings = {ASSET_TAGS = (); }; };
 		288BE68A1BBE2A4800ABABDB /* FFFountain.m in Sources */ = {isa = PBXBuildFile; fileRef = 288BE6891BBE2A4800ABABDB /* FFFountain.m */; settings = {ASSET_TAGS = (); }; };
+		288BE68D1BBE359000ABABDB /* FFAddFountainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 288BE68C1BBE359000ABABDB /* FFAddFountainViewController.m */; settings = {ASSET_TAGS = (); }; };
+		288BE6901BBE35B300ABABDB /* FFAddFountainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 288BE68F1BBE35B300ABABDB /* FFAddFountainView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,10 @@
 		288BE6861BBE196600ABABDB /* FFFountainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFountainView.m; sourceTree = "<group>"; };
 		288BE6881BBE2A4800ABABDB /* FFFountain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFountain.h; sourceTree = "<group>"; };
 		288BE6891BBE2A4800ABABDB /* FFFountain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFountain.m; sourceTree = "<group>"; };
+		288BE68B1BBE359000ABABDB /* FFAddFountainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFAddFountainViewController.h; sourceTree = "<group>"; };
+		288BE68C1BBE359000ABABDB /* FFAddFountainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFAddFountainViewController.m; sourceTree = "<group>"; };
+		288BE68E1BBE35B300ABABDB /* FFAddFountainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFAddFountainView.h; sourceTree = "<group>"; };
+		288BE68F1BBE35B300ABABDB /* FFAddFountainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFAddFountainView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,16 +97,20 @@
 			children = (
 				288BE6691BBE142D00ABABDB /* FFAppDelegate.h */,
 				288BE66A1BBE142D00ABABDB /* FFAppDelegate.m */,
-				288BE66B1BBE142D00ABABDB /* FFFirebase.h */,
-				288BE66C1BBE142D00ABABDB /* FFFirebase.m */,
-				288BE66D1BBE142D00ABABDB /* FFLoginView.h */,
-				288BE66E1BBE142D00ABABDB /* FFLoginView.m */,
 				288BE66F1BBE142D00ABABDB /* FFLoginViewController.h */,
 				288BE6701BBE142D00ABABDB /* FFLoginViewController.m */,
+				288BE66D1BBE142D00ABABDB /* FFLoginView.h */,
+				288BE66E1BBE142D00ABABDB /* FFLoginView.m */,
 				288BE6821BBE193D00ABABDB /* FFFountainViewController.h */,
 				288BE6831BBE193D00ABABDB /* FFFountainViewController.m */,
 				288BE6851BBE196600ABABDB /* FFFountainView.h */,
 				288BE6861BBE196600ABABDB /* FFFountainView.m */,
+				288BE68B1BBE359000ABABDB /* FFAddFountainViewController.h */,
+				288BE68C1BBE359000ABABDB /* FFAddFountainViewController.m */,
+				288BE68E1BBE35B300ABABDB /* FFAddFountainView.h */,
+				288BE68F1BBE35B300ABABDB /* FFAddFountainView.m */,
+				288BE66B1BBE142D00ABABDB /* FFFirebase.h */,
+				288BE66C1BBE142D00ABABDB /* FFFirebase.m */,
 				288BE6881BBE2A4800ABABDB /* FFFountain.h */,
 				288BE6891BBE2A4800ABABDB /* FFFountain.m */,
 				288BE65E1BBE13FA00ABABDB /* Assets.xcassets */,
@@ -208,6 +218,8 @@
 				288BE6711BBE142D00ABABDB /* FFAppDelegate.m in Sources */,
 				288BE6741BBE142D00ABABDB /* FFLoginViewController.m in Sources */,
 				288BE6871BBE196600ABABDB /* FFFountainView.m in Sources */,
+				288BE68D1BBE359000ABABDB /* FFAddFountainViewController.m in Sources */,
+				288BE6901BBE35B300ABABDB /* FFAddFountainView.m in Sources */,
 				288BE6541BBE13FA00ABABDB /* main.m in Sources */,
 				288BE6721BBE142D00ABABDB /* FFFirebase.m in Sources */,
 				288BE68A1BBE2A4800ABABDB /* FFFountain.m in Sources */,

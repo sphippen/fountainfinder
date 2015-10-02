@@ -8,6 +8,7 @@
 
 #import "FFAppDelegate.h"
 #import "FFLoginViewController.h"
+#import "FFFirebase.h"
 
 @implementation FFAppDelegate
 
@@ -21,6 +22,8 @@
     [window setRootViewController:nav];
 
     [window makeKeyAndVisible];
+
+    [FFFirebase listenForFountains];
     return TRUE;
 }
 

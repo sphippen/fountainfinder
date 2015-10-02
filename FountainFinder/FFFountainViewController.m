@@ -10,6 +10,10 @@
 
 #import "FFFountainView.h"
 #import "FFFirebase.h"
+#import "FFAddFountainViewController.h"
+
+@interface FFFountainViewController () <MKMapViewDelegate, UIGestureRecognizerDelegate>
+@end
 
 @implementation FFFountainViewController {
     NSMutableArray* _annotations;
@@ -37,6 +41,11 @@
 
 - (void) viewDidLoad {
     [[[self fountainView] mapView] setRotateEnabled:FALSE];
+
+    UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapOnMap:)];
+    [tap setNumberOfTapsRequired:2];
+    [tap setDelegate:self];
+    [[[self fountainView] mapView] addGestureRecognizer:tap];
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -75,6 +84,29 @@
     }
 
     [mapView addAnnotations:_annotations];
+}
+
+- (void) tapOnMap:(UITapGestureRecognizer*)tap {
+    if ([tap state] == UIGestureRecognizerStateEnded) {
+        MKMapView* mapView = [[self fountainView] mapView];
+        CGPoint loc = [tap locationInView:mapView];
+        CLLocationCoordinate2D coord = [mapView convertPoint:loc toCoordinateFromView:mapView];
+
+        FFAddFountainViewController* vc = [FFAddFountainViewController new];
+        typeof(self) __weak weakSelf = self;
+        [vc setCompletion:^(FFFountain* fountain) {
+            typeof(self) __strong strongSelf = weakSelf;
+            [fountain setCoordinate:coord];
+            [FFFirebase addFountain:fountain];
+            [strongSelf dismissViewControllerAnimated:TRUE completion:nil];
+        }];
+        [self presentViewController:vc animated:TRUE completion:nil];
+    }
+}
+
+#pragma mark UIGestureRecognizerDelegate Methods
+- (BOOL) gestureRecognizer:(UIGestureRecognizer*)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer*)otherGestureRecognizer {
+    return TRUE;
 }
 
 @end

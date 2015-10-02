@@ -17,6 +17,8 @@
 + (NSArray*) fountains;
 + (void) addFountain:(FFFountain*)fountain;
 
++ (void) listenForFountains;
+
 @end
 
 extern NSString* const FFFirebaseFountainsChanged;
