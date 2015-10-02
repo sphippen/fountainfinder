@@ -18,6 +18,7 @@
 @property int temperature;
 @property int pressure;
 @property int cleanliness;
+
 @property (nonatomic) CLLocationCoordinate2D coordinate;
 
 @end

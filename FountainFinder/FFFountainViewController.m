@@ -11,6 +11,7 @@
 #import "FFFountainView.h"
 #import "FFFirebase.h"
 #import "FFAddFountainViewController.h"
+#import "FFFountainViewController.h"
 
 @interface FFFountainViewController () <MKMapViewDelegate, UIGestureRecognizerDelegate>
 @end
@@ -41,6 +42,7 @@
 
 - (void) viewDidLoad {
     [[[self fountainView] mapView] setRotateEnabled:FALSE];
+    [[[self fountainView] mapView] setDelegate:self];
 
     UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapOnMap:)];
     [tap setNumberOfTapsRequired:2];
@@ -107,6 +109,24 @@
 #pragma mark UIGestureRecognizerDelegate Methods
 - (BOOL) gestureRecognizer:(UIGestureRecognizer*)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer*)otherGestureRecognizer {
     return TRUE;
+}
+
+#pragma mark MKMapViewDelegate Methods
+- (nullable MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+    MKPinAnnotationView* view = (MKPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"FFFountainPin"];
+    if (!view)
+        view = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"FFFountainPin"];
+
+    [view setCanShowCallout:TRUE];
+
+    FFFountain* fountain = (FFFountain*)annotation;
+    UILabel* detail = [UILabel new];
+    [detail setText:[NSString stringWithFormat:@"Temp:%d\nPressure:%d\nClean:%d", [fountain temperature], [fountain pressure], [fountain cleanliness]]];
+    [detail setText:[NSString stringWithFormat:@"%d, %d, %d\n(Temp, Pressure, Clean)", [fountain temperature], [fountain pressure], [fountain cleanliness]]];
+    [detail setNumberOfLines:2];
+    [detail sizeToFit];
+    [view setRightCalloutAccessoryView:detail];
+    return view;
 }
 
 @end

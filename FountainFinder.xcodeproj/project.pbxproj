@@ -97,22 +97,10 @@
 			children = (
 				288BE6691BBE142D00ABABDB /* FFAppDelegate.h */,
 				288BE66A1BBE142D00ABABDB /* FFAppDelegate.m */,
-				288BE66F1BBE142D00ABABDB /* FFLoginViewController.h */,
-				288BE6701BBE142D00ABABDB /* FFLoginViewController.m */,
-				288BE66D1BBE142D00ABABDB /* FFLoginView.h */,
-				288BE66E1BBE142D00ABABDB /* FFLoginView.m */,
-				288BE6821BBE193D00ABABDB /* FFFountainViewController.h */,
-				288BE6831BBE193D00ABABDB /* FFFountainViewController.m */,
-				288BE6851BBE196600ABABDB /* FFFountainView.h */,
-				288BE6861BBE196600ABABDB /* FFFountainView.m */,
-				288BE68B1BBE359000ABABDB /* FFAddFountainViewController.h */,
-				288BE68C1BBE359000ABABDB /* FFAddFountainViewController.m */,
-				288BE68E1BBE35B300ABABDB /* FFAddFountainView.h */,
-				288BE68F1BBE35B300ABABDB /* FFAddFountainView.m */,
-				288BE66B1BBE142D00ABABDB /* FFFirebase.h */,
-				288BE66C1BBE142D00ABABDB /* FFFirebase.m */,
-				288BE6881BBE2A4800ABABDB /* FFFountain.h */,
-				288BE6891BBE2A4800ABABDB /* FFFountain.m */,
+				288BE6941BBE3C9C00ABABDB /* Login */,
+				288BE6971BBE3CC100ABABDB /* Fountain Map */,
+				288BE6951BBE3CA500ABABDB /* Add Fountain */,
+				288BE6961BBE3CB700ABABDB /* Data */,
 				288BE65E1BBE13FA00ABABDB /* Assets.xcassets */,
 				288BE6601BBE13FA00ABABDB /* LaunchScreen.storyboard */,
 				288BE6631BBE13FA00ABABDB /* Info.plist */,
@@ -142,6 +130,50 @@
 			);
 			name = Frameworks;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		288BE6941BBE3C9C00ABABDB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				288BE66F1BBE142D00ABABDB /* FFLoginViewController.h */,
+				288BE6701BBE142D00ABABDB /* FFLoginViewController.m */,
+				288BE66D1BBE142D00ABABDB /* FFLoginView.h */,
+				288BE66E1BBE142D00ABABDB /* FFLoginView.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		288BE6951BBE3CA500ABABDB /* Add Fountain */ = {
+			isa = PBXGroup;
+			children = (
+				288BE68B1BBE359000ABABDB /* FFAddFountainViewController.h */,
+				288BE68C1BBE359000ABABDB /* FFAddFountainViewController.m */,
+				288BE68E1BBE35B300ABABDB /* FFAddFountainView.h */,
+				288BE68F1BBE35B300ABABDB /* FFAddFountainView.m */,
+			);
+			name = "Add Fountain";
+			sourceTree = "<group>";
+		};
+		288BE6961BBE3CB700ABABDB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				288BE66B1BBE142D00ABABDB /* FFFirebase.h */,
+				288BE66C1BBE142D00ABABDB /* FFFirebase.m */,
+				288BE6881BBE2A4800ABABDB /* FFFountain.h */,
+				288BE6891BBE2A4800ABABDB /* FFFountain.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		288BE6971BBE3CC100ABABDB /* Fountain Map */ = {
+			isa = PBXGroup;
+			children = (
+				288BE6821BBE193D00ABABDB /* FFFountainViewController.h */,
+				288BE6831BBE193D00ABABDB /* FFFountainViewController.m */,
+				288BE6851BBE196600ABABDB /* FFFountainView.h */,
+				288BE6861BBE196600ABABDB /* FFFountainView.m */,
+			);
+			name = "Fountain Map";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +401,7 @@
 				288BE6681BBE13FA00ABABDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
